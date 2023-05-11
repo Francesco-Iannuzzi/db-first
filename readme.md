@@ -37,7 +37,7 @@ Dates:
 - transmission (cambio)                         | VARCHAR(20) - NULL
 - car_door (portiere)                           | TINYINT - NULL
 - seats (sedili)                                | TINYINT - NULL
-- emission_class (classe di emissione)          | CHAR(6) - NULL
+- emission_class (classe di emissione)          | CHAR(5) - NULL
 - co2_emission (emissioni di co2)               | VARCHAR(20) - NULL
 - consumption (consumi)                         | VARCHAR(20) - NULL
 - previous_owners (proprietari precedenti)      | TINYINT - NULL
@@ -46,6 +46,7 @@ Dates:
 - last_maintenance (ultima manutenzione)        | DATE - NULL
 - car_crashed_and_repaired                      | TINYINT (true or false) - DEFAULT(0)
 - license_plate (targa)                         | CHAR(7) - UNIQUE, NOTNULL
-- vin (telaio)                                  | CHAR(17) - NOTNULL, INDEX
+- vin (telaio)                                  | CHAR(17) - NOTNULL, UNIQUE, INDEX
 - price                                         | DECIMAL(9, 2) - NOTNULL, INDEX
 - availability (disponibilità)                  | TINYINT - NULL, INDEX
+- note                                          | TEXT - NULL
